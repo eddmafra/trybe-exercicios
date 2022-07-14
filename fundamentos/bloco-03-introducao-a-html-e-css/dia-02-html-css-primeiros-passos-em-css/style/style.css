@@ -1,0 +1,22 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+  }
+  p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: justify;
+  }
+  body {
+    font-size: 16px;
+  }
+  ul {
+    line-height: 50px;
+    background-color: aqua;
+    font-style: italic;
+    text-decoration: wavy;
+  }
+  .writings {
+    background-color: cornflowerblue;
+  }
