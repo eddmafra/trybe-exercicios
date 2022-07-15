@@ -1,0 +1,26 @@
+
+div:first-child {
+    background-color: sandybrown;
+}
+div:nth-child(2) {
+    background-color: green;
+}
+div:nth-child(3) {
+    background-color: brown;
+}
+div:nth-child(4) {
+    background-color: aqua;
+}
+div:nth-child(5) {
+    background-color: violet;
+}
+div:hover {
+    border: 5px solid black;
+}
+
+h3:nth-child(3){
+    font-size: larger;
+}
+h3:nth-child(odd) {
+    font-style: italic;
+}
