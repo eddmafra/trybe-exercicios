@@ -1,0 +1,41 @@
+
+div:first-of-type {
+    background-color: sandybrown;
+}
+div:nth-of-type(2) {
+    background-color: green;
+}
+div:nth-of-type(3) {
+    background-color: brown;
+    font-size: 40px;
+}
+div:nth-of-type(4) {
+    background-color: aqua;
+}
+div:nth-of-type(5) {
+    background-color: violet;
+}
+div:hover {
+    border: 5px solid black;
+}
+
+div:nth-of-type(2n+1) > h3 {
+    font-style: italic;
+}
+
+
+div:first-of-type > h3 {
+text-transform: lowercase;
+}
+div:nth-of-type(2) > h3 {
+    text-decoration: line-through;
+}
+div:nth-of-type(3) > h3 {
+    text-decoration:overline;
+}
+div:nth-of-type(4) > h3 {
+    text-decoration: underline;
+}
+div:nth-of-type(5) > h3 {
+text-transform: uppercase;
+}
