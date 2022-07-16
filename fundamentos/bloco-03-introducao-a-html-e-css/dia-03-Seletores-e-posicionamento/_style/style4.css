@@ -33,3 +33,20 @@ ul li:nth-child(3) {
 .jv {
     background-color: pink;
 }
+
+#stack:hover {
+    background-color: orange;
+}
+
+#w3:hover {
+    background-color: greenyellow;
+}
+#mdn:hover {
+    background-color: black;
+}
+#devdocs:hover {
+    background-color: yellow;
+}
+#trybe:hover {
+    background-color: green;
+}
