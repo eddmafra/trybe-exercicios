@@ -1,6 +1,59 @@
 * {
-    margin: 0;
-    padding: 0%;
+  margin: 0;
+  padding: 0%;
 }
-table {
+
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 70%;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+header nav li {
+  text-align: end;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 10px;
+  margin-left: 20px;
+}
+p {
+  margin-left: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+aside {
+    width: 20%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    display: inline-block;
+    height: auto;
+}
+
+main {
+    width: 65%;
+    float:left ;
+    margin-bottom: auto;
+}
+
+footer {
+    margin-top: auto;
+    
 }
