@@ -1,59 +1,81 @@
 * {
   margin: 0;
   padding: 0%;
+  background-color: black;
+  color: aliceblue;
 }
 
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid white;
   width: 70%;
   text-align: center;
   padding: 5px;
   margin: auto;
 }
 
+header {
+    background-color: rgb(32, 30, 33);
+}
+header  h1 {
+    background-color: rgb(32, 30, 33);
+}
 header nav li {
   text-align: end;
-  margin-right: 15px;
+  padding-right: 15px;
   list-style-type: none;
+  background-color: rgb(32, 30, 33);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  padding: 10px;
+  padding: 15px;
   margin-left: 20px;
+  color: aqua;
 }
 p {
   margin-left: 10px;
+  padding: 5px;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 aside {
-    width: 20%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    display: inline-block;
-    height: auto;
+  width: 20%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  display: inline-block;
+  position: fixed;
+  text-align: center;
 }
 
+
 main {
-    width: 65%;
-    float:left ;
-    margin-bottom: auto;
+  width: 75%;
+  margin-bottom: auto;
+  display: inline-block;
 }
 
 footer {
-    margin-top: auto;
-    
+  background-color: rgb(32, 30, 33);
+}
+footer p {
+  background-color: rgb(32, 30, 33);
+  padding: 20px;
+}
+
+section nav ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
