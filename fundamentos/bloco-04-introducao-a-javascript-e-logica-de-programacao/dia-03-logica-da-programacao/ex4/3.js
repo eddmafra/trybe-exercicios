@@ -42,18 +42,18 @@
 // }
 // console.log (maiorPalavra);
 
-// 4- Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
-let bigPrime = 0;
+// // 4- Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
+// let bigPrime = 0;
 
-for (let i = 2; i <= 50; i += 1) {
-  let primo = false;
-  for (let j = 2; j <= i; j += 1) {
-    if (i % j === 0);
-    primo = true;
-  }
+// for (let i = 2; i <= 50; i += 1) {
+//   let primo = false;
+//   for (let j = 2; j <= i; j += 1) {
+//     if (i % j === 0);
+//     primo = true;
+//   }
 
-  if (primo === true) {
-    bigPrime = i;
-  }
-}
-console.log(bigPrime);
+//   if (primo === true) {
+//     bigPrime = i;
+//   }
+// }
+// console.log(bigPrime);
