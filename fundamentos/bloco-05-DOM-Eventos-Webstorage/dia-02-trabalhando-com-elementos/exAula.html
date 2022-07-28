@@ -20,44 +20,56 @@
       </section>
     </main>
     <script>
- 		//1. Acesse o elemento elementoOndeVoceEsta.
-		document.querySelector('#elementoOndeVoceEsta');
-    //2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-		let pai = document.querySelector('#elementoOndeVoceEsta').parentNode;
-		pai.style.color = 'red';
-    //3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-		let filhoDoFilhoUm = document.querySelector('#elementoOndeVoceEsta').firstElementChild;
-		filhoDoFilhoUm.innerText = 'surprise';
-    //4. Acesse o primeiroFilho a partir de pai.
-		document.querySelector('#pai').firstElementChild;
-    //5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
-		document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
-    //6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
-		document.querySelector('#elementoOndeVoceEsta').parentNode.innerText;
-    //7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
-		document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
-    //8. Agora acesse o terceiroFilho a partir de pai.
-		document.querySelector('#pai').lastElementChild.previousElementSibling;
+      //1. Acesse o elemento elementoOndeVoceEsta.
+      document.querySelector("#elementoOndeVoceEsta");
+      //2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+      let pai = document.querySelector("#elementoOndeVoceEsta").parentNode;
+      pai.style.color = "red";
+      //3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+      let filhoDoFilhoUm = document.querySelector(
+        "#elementoOndeVoceEsta"
+      ).firstElementChild;
+      filhoDoFilhoUm.innerText = "surprise";
+      //4. Acesse o primeiroFilho a partir de pai.
+      document.querySelector("#pai").firstElementChild;
+      //5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+      document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+      //6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+      document.querySelector("#elementoOndeVoceEsta").parentNode.innerText;
+      //7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+      document.querySelector("#elementoOndeVoceEsta").nextElementSibling;
+      //8. Agora acesse o terceiroFilho a partir de pai.
+      document.querySelector("#pai").lastElementChild.previousElementSibling;
 
-	
-// 🚀 E a prática? Aqui!
+      // 🚀 E a prática? Aqui!
 
-// Crie um irmão para elementoOndeVoceEsta.
-const novoIrmao = document.createElement('div');
-novoIrmao.innerText = "Essa é uma nova div irmazona do elementoOndeVoceEsta";
-pai.appendChild(novoIrmao);
-// Crie um filho para elementoOndeVoceEsta.
-const novoFilho = document.createElement('p');
-novoFilho.innerText = 'Este é o filhão do elementoOndeVoceEsta';
-elementoOndeVoceEsta.appendChild(novoFilho);
-// Crie um filho para primeiroFilhoDoFilho.
-const maisUmFilho = document.createElement('aside');
-maisUmFilho.innerText = 'Este é o ultimo filho dessa familia';
-maisUmFilho.setAttribute('id', 'umFilho');
-primeiroFilhoDoFilho.appendChild(maisUmFilho);
-// A partir desse filho criado, acesse terceiroFilho.
-document.querySelector('#umFilho').parentElement.parentElement.nextElementSibling
+      // Crie um irmão para elementoOndeVoceEsta.
+      const novoIrmao = document.createElement("div");
+      novoIrmao.innerText =
+        "Essa é uma nova div irmazona do elementoOndeVoceEsta";
+      pai.appendChild(novoIrmao);
+      // Crie um filho para elementoOndeVoceEsta.
+      const novoFilho = document.createElement("p");
+      novoFilho.innerText = "Este é o filhão do elementoOndeVoceEsta";
+      elementoOndeVoceEsta.appendChild(novoFilho);
+      // Crie um filho para primeiroFilhoDoFilho.
+      const maisUmFilho = document.createElement("aside");
+      maisUmFilho.innerText = "Este é o ultimo filho dessa familia";
+      maisUmFilho.setAttribute("id", "umFilho");
+      primeiroFilhoDoFilho.appendChild(maisUmFilho);
+      // A partir desse filho criado, acesse terceiroFilho.
+      document.querySelector("#umFilho").parentElement.parentElement
+        .nextElementSibling;
 
-		</script>
+      // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+function mataCrianca(idDoPai, idDaCrianca){
+	idDoPai.removeChild(idDaCrianca);
+}
+mataCrianca(pai, primeiroFilho);
+mataCrianca(pai, terceiroFilho);
+mataCrianca(pai, quartoEUltimoFilho);
+mataCrianca(elementoOndeVoceEsta, segundoEUltimoFilhoDoFilho);
+mataCrianca(primeiroFilhoDoFilho, umFilho)
+    </script>
   </body>
 </html>
