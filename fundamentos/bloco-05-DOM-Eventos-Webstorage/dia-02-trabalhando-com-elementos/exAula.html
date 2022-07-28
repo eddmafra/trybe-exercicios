@@ -44,10 +44,19 @@
 
 // Crie um irmão para elementoOndeVoceEsta.
 const novoIrmao = document.createElement('div');
-
+novoIrmao.innerText = "Essa é uma nova div irmazona do elementoOndeVoceEsta";
+pai.appendChild(novoIrmao);
 // Crie um filho para elementoOndeVoceEsta.
+const novoFilho = document.createElement('p');
+novoFilho.innerText = 'Este é o filhão do elementoOndeVoceEsta';
+elementoOndeVoceEsta.appendChild(novoFilho);
 // Crie um filho para primeiroFilhoDoFilho.
+const maisUmFilho = document.createElement('aside');
+maisUmFilho.innerText = 'Este é o ultimo filho dessa familia';
+maisUmFilho.setAttribute('id', 'umFilho');
+primeiroFilhoDoFilho.appendChild(maisUmFilho);
 // A partir desse filho criado, acesse terceiroFilho.
+document.querySelector('#umFilho').parentElement.parentElement.nextElementSibling
 
 		</script>
   </body>
