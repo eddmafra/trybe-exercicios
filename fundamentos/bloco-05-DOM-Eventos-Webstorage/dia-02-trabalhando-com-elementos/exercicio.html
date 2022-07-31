@@ -92,29 +92,42 @@ classeFotinha.src = 'https://picsum.photos/200';
 //     🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 const listaNaoOrdenada = document.createElement('ul');
 document.getElementsByClassName('right-content')[0].appendChild(listaNaoOrdenada);
-function criacaoDeLista(numero){
-  let x = document.createElement('li');
-  let t = document.createTextNode(numero);
-  x.appendChild(t);
-  document.getElementsByTagName('ul')[0].appendChild(x);
+const arrayNumbers = ['UM', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+for (let num in arrayNumbers){
+  const lista = document.createElement('li');
+  lista.innerHTML = arrayNumbers[num];
+  listaNaoOrdenada.appendChild(lista)
 }
-for (i = 1; i <=10; i += 1){
-  let numero = [i];
-  criacaoDeLista('numero')
-
-}
-
 
 //     🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+for (let i = 0; i < 3; i += 1){
+  let subtitulo = document.createElement('h3');
+  principal.appendChild(subtitulo);
+}
 
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
 //     🚀 Adicione a classe title na tag h1 criada;
+titulo.classList.add('titulo');
 //     🚀 Adicione a classe description nas 3 tags h3 criadas;
+for (let i = 0; i < 3; i += 1){
+  let subtitulo = document.getElementsByTagName('h3')[i];
+  subtitulo.classList.add('description');
+}
 //     🚀 Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+principal.removeChild(principal.firstElementChild.nextElementSibling);
 //     🚀 Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+const secDireita = document.getElementsByTagName('section');
+secDireita[1].style.margin = '0px auto';
 //     🚀 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
-//     🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8
+const secCentro = document.getElementsByClassName('center-content');
+secCentro[0].parentNode.style.backgroundColor = 'green';
+    // 🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8
+    let elementoLista = document.getElementsByTagName('ul')[0];
+
+  elementoLista.removeChild(elementoLista.lastElementChild);
+  elementoLista.removeChild(elementoLista.lastElementChild);
+
     </script>
   </body>
 </html>
