@@ -2,5 +2,42 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
-	border: 1px solid black;
+}
+
+header h1 {
+	text-align: center;
+	padding: 20px 0px 30px 0px;
+	color: white;
+	background-color: #036b52;
+}
+
+#formulario {
+	width: 40%;
+	margin: 0px auto 0px auto;
+}
+
+#viagem {
+	margin: 10px auto 5px auto;
+}
+
+.conteudo {
+	margin: 8px;
+	padding: 5px;
+}
+
+#input-data {
+	margin: 8px;
+}
+
+.opcoes input {
+	margin: 10px 5px;
+}
+
+.botoes {
+	margin: 10px;
+}
+
+.botoes button {
+	padding: 5px 10px;
+	margin-left: 20px;
 }

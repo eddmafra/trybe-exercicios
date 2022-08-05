@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Meu formulário</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Trybetrip</h1>
+	</header>
+	<main>
+		<fieldset id="formulario">
+			<legend id="viagem"><b><em>A viagem da sua vida!</em></b></legend>
+			<form action="set">
+				<fieldset class="nomeEmail conteudo">
+					<legend> Dados cadastrais </legend>
+					<label for="nomeCompleto"> Nome: </label>
+					<input type="text" name="nome" id="nomeCompleto" minlength="10" maxlength="40" />
+					<br />
+					<label for="input-email" minlength="10" maxlenght="50">
+						E-mail:
+					</label>
+					<input type="text" name="email" id="input-email" />
+				</fieldset>
+				<div class="opcoes conteudo">
+					<fieldset>
+						<legend> Qual seu destino favorito? </legend>
+						<input type="radio" name="posicoes" id="posicaoCidade" value="cidade" >
+						<label for="posicaoCidade">Cidade</label>
+						<input type="radio" name="posicoes" id="posicaoCampo" value="campo" >
+						<label for="posicaoCampo">Campo</label> 
+						<input type="radio" name="posicoes" id="posicaoPraia" value="praia" >
+						<label for="posicaoPraia">Praia</label> 
+						<input type="radio" name="posicoes" id="posicaoMontanha" value="montanha" >
+						<label for="posicaoMontanha">Montanha</label> 
+					</fieldset>
+				</div>
+				<div class="textao conteudo">
+					<fieldset>
+						<legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+							TrybeTrip?</legend>
+							<br>
+							<textarea name="resposta" id="texto-resposta" cols="100" rows="10"
+							placeholder="Espaço para digitar sua resposta:" maxlength="500"></textarea>
+						</fieldset>
+						</div>
+						<div class="data conteudo">
+					<fieldset>
+
+						<legend>Qual a melhor data para realizar sua viagem?</legend>
+						<label for="input-data">Data: </label>
+						<input type="date" name="data" id="input-data" />
+					</fieldset>
+					</div>
+					<div class="concorda conteudo">
+						<input type="checkbox" name="acordo" id="concorda1" required /> Concordo que imagens das minhas férias poderão
+						ser usadas na divulgação de concursos futuros.
+						<br />
+						<input type="checkbox" name="noticias" id="concorda2" /> Gostaria de receber outras incríveis oportunidades
+						oferecidas pela Trybe?
+					</div>
+					<div class="botoes conteudo">
+					<button type="submit" id="botaoEnviar"> Enviar </button>
+					<button type="reset" id="botaoApagar"> Apagar </button>
+				</div>
+			</form>
+		</fieldset>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
