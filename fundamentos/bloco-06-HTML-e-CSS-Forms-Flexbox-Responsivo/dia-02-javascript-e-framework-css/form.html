@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Meu formulário</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://kit.fontawesome.com/54ba0b3f76.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Trybetrip</h1>
+	</header>
+	<main>
+		<p id="viagem">
+			<b><em>A viagem da sua vida!</em></b>
+		</p>
+		<form action="set">
+			<div class="field">
+				<label class="label">Nome:</label>
+				<div class="control has-icons-left has-icons-right">
+					<input class="input is-info" type="text" placeholder="Digite seu nome completo" value="" />
+					<span class="icon is-small is-left">
+						<i class="fas fa-user"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-check"></i>
+					</span>
+				</div>
+				<div class="field">
+					<label class="label">Email</label>
+					<div class="control has-icons-left has-icons-right">
+						<input class="input is-info" type="email" placeholder="Digite seu e-mail" value="">
+						<span class="icon is-small is-left">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="opcoes conteudo">
+					<p>Qual seu destino favorito?</p>
+					<input type="radio" name="posicoes" id="posicaoCidade" value="cidade" />
+					<label for="posicaoCidade">Cidade</label>
+					<input type="radio" name="posicoes" id="posicaoCampo" value="campo" />
+					<label for="posicaoCampo">Campo</label>
+					<input type="radio" name="posicoes" id="posicaoPraia" value="praia" />
+					<label for="posicaoPraia">Praia</label>
+					<input type="radio" name="posicoes" id="posicaoMontanha" value="montanha" />
+					<label for="posicaoMontanha">Montanha</label>
+				</div>
+				<div class="textao conteudo">
+					<p>
+						Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+						TrybeTrip?
+					</p>
+					<br />
+					<textarea name="resposta" id="texto-resposta" cols="100" rows="10"
+						placeholder="Espaço para digitar sua resposta:" maxlength="500"></textarea>
+				</div>
+				<div class="data conteudo">
+					<p>Qual a melhor data para realizar sua viagem?</p>
+					<label for="input-data">Data: </label>
+					<input type="date" name="data" id="input-data" />
+				</div>
+				<div class="concorda conteudo">
+					<input type="checkbox" name="acordo" id="concorda1" required />
+					Concordo que imagens das minhas férias poderão ser usadas na
+					divulgação de concursos futuros.
+					<br />
+					<input type="checkbox" name="noticias" id="concorda2" /> Gostaria de
+					receber outras incríveis oportunidades oferecidas pela Trybe?
+				</div>
+				<div class="botoes conteudo">
+					<button type="submit" id="botaoEnviar">Enviar</button>
+					<button type="reset" id="botaoApagar">Apagar</button>
+				</div>
+		</form>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
