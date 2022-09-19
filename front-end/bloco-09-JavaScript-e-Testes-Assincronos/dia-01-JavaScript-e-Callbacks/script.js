@@ -15,7 +15,7 @@ const minhasDespesas = [
     internet: 100,
   },
 ];
-
+s
 // Declaramos nossa renda
 const minhaRenda = 1000;
 
